@@ -6,7 +6,7 @@ def line(current_line)
   else
       line_list = "The line is currently:"
       current_line.each.with_index do |name, index| 
-      line_list >> " #{index + 1}. #{name}"
+      line_list += " #{index + 1}. #{name}"
   end 
   puts line_list
   end
